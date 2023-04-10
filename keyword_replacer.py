@@ -1,4 +1,5 @@
 import string
+from abbreviation_dict import abbreviation_dict
 
 
 class Node:
@@ -40,14 +41,14 @@ class KeywordReplacer:
         return ' '.join(result)
 
 
-abbreviations = {"can't": "cannot", "ain't": "am not",
-                 "haven't": "have not", "w/": "with",
-                 "w/o": "without", "etc.": "and so on",
-                 "asap": "as soon as possible", "you're": "you are",
-                 "q&e": "quick and easy"}
-replacer = KeywordReplacer(abbreviations)
+# abbreviations = {"can't": "cannot", "ain't": "am not",
+#                  "haven't": "have not", "w/": "with",
+#                  "w/o": "without", "etc.": "and so on",
+#                  "asap": "as soon as possible", "you're": "you are",
+#                  "q&e": "quick and easy"}
+# replacer = KeywordReplacer(abbreviations)
 
-corpus = "I ain't looking for a q&e answer. Since we haven't even understood the concept yet, we can't go on like that! Get to it asap or you're fired!"
-result = replacer.replace_keywords(corpus)
-print(result)
+# corpus = "I ain't looking for a q&e answer. Since we haven't even understood the concept yet, we can't go on like that! Get to it asap or you're fired!"
+# result = replacer.replace_keywords(corpus)
+# print(result)
 # Modified Corpus: "I am not looking for a quick and easy answer. Since we have not even understood the concept yet, we cannot go on like that! Get to it as soon as possible or you are fired!"
