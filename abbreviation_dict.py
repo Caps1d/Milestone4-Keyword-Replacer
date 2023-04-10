@@ -77,4 +77,5 @@ abbreviation_dict = {
     "ttyl": "talk to you later",
     "ty": "thank you",
     "w/e": "whatever",
+    "w/o": "without",
 }
